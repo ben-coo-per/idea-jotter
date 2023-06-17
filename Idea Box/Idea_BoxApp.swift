@@ -17,12 +17,12 @@ struct IdeaList: ReducerProtocol {
     public struct State: Equatable {
         var ideas: [Idea] = [
             Idea(description: "Fooby dooby", id: UUID()),
-            Idea(description: "Fooby dooby 2: Electric shoe", id: UUID())
+            Idea(description: "Fooby dooby 2: Electric shoe", id: UUID()),
         ]
     }
     enum Action: Equatable {
         case addIdea(String)
-        case removeIdea(Int)
+        case archiveIdea(Int)
     }
     
     func reduce(into state: inout State, action: Action) -> EffectTask<Action> {
@@ -30,7 +30,7 @@ struct IdeaList: ReducerProtocol {
             case let .addIdea(idea):
                 state.ideas.append(Idea(description: idea, id: UUID()))
                 return .none
-        case let .removeIdea(index):
+        case let .archiveIdea(index):
             state.ideas.remove(at: index)
             return .none
             }
