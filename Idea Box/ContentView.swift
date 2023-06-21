@@ -23,7 +23,6 @@ struct ContentView: View {
                     }
                     AddIdeaInputBoxView(store: viewStore)
                 }.navigationTitle("Ideas")
-                // TODO: archive page -> swipe to archive & unarchive
             }
         }
     }
