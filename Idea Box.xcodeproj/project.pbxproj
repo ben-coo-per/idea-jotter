@@ -14,31 +14,12 @@
 		BA06A1A12A3BFAC200146F28 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = BA06A1A02A3BFAC200146F28 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		BA06A1832A3BF87200146F28 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA06A16A2A3BF87000146F28 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BA06A1712A3BF87000146F28;
-			remoteInfo = "Idea Box";
-		};
-		BA06A18D2A3BF87200146F28 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA06A16A2A3BF87000146F28 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BA06A1712A3BF87000146F28;
-			remoteInfo = "Idea Box";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		BA06A1722A3BF87000146F28 /* Idea Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Idea Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA06A1752A3BF87000146F28 /* Idea_BoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idea_BoxApp.swift; sourceTree = "<group>"; };
 		BA06A1772A3BF87000146F28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA06A1792A3BF87200146F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA06A17C2A3BF87200146F28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BA06A1822A3BF87200146F28 /* Idea BoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Idea BoxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA06A18C2A3BF87200146F28 /* Idea BoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Idea BoxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,20 +28,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA06A1A12A3BFAC200146F28 /* ComposableArchitecture in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA06A17F2A3BF87200146F28 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA06A1892A3BF87200146F28 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,8 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				BA06A1722A3BF87000146F28 /* Idea Box.app */,
-				BA06A1822A3BF87200146F28 /* Idea BoxTests.xctest */,
-				BA06A18C2A3BF87200146F28 /* Idea BoxUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,42 +92,6 @@
 			productReference = BA06A1722A3BF87000146F28 /* Idea Box.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BA06A1812A3BF87200146F28 /* Idea BoxTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA06A1992A3BF87200146F28 /* Build configuration list for PBXNativeTarget "Idea BoxTests" */;
-			buildPhases = (
-				BA06A17E2A3BF87200146F28 /* Sources */,
-				BA06A17F2A3BF87200146F28 /* Frameworks */,
-				BA06A1802A3BF87200146F28 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BA06A1842A3BF87200146F28 /* PBXTargetDependency */,
-			);
-			name = "Idea BoxTests";
-			productName = "Idea BoxTests";
-			productReference = BA06A1822A3BF87200146F28 /* Idea BoxTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		BA06A18B2A3BF87200146F28 /* Idea BoxUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA06A19C2A3BF87200146F28 /* Build configuration list for PBXNativeTarget "Idea BoxUITests" */;
-			buildPhases = (
-				BA06A1882A3BF87200146F28 /* Sources */,
-				BA06A1892A3BF87200146F28 /* Frameworks */,
-				BA06A18A2A3BF87200146F28 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BA06A18E2A3BF87200146F28 /* PBXTargetDependency */,
-			);
-			name = "Idea BoxUITests";
-			productName = "Idea BoxUITests";
-			productReference = BA06A18C2A3BF87200146F28 /* Idea BoxUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,14 +104,6 @@
 				TargetAttributes = {
 					BA06A1712A3BF87000146F28 = {
 						CreatedOnToolsVersion = 14.3.1;
-					};
-					BA06A1812A3BF87200146F28 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = BA06A1712A3BF87000146F28;
-					};
-					BA06A18B2A3BF87200146F28 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = BA06A1712A3BF87000146F28;
 					};
 				};
 			};
@@ -203,8 +124,6 @@
 			projectRoot = "";
 			targets = (
 				BA06A1712A3BF87000146F28 /* Idea Box */,
-				BA06A1812A3BF87200146F28 /* Idea BoxTests */,
-				BA06A18B2A3BF87200146F28 /* Idea BoxUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,20 +135,6 @@
 			files = (
 				BA06A17D2A3BF87200146F28 /* Preview Assets.xcassets in Resources */,
 				BA06A17A2A3BF87200146F28 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA06A1802A3BF87200146F28 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA06A18A2A3BF87200146F28 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,34 +150,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA06A17E2A3BF87200146F28 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA06A1882A3BF87200146F28 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BA06A1842A3BF87200146F28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BA06A1712A3BF87000146F28 /* Idea Box */;
-			targetProxy = BA06A1832A3BF87200146F28 /* PBXContainerItemProxy */;
-		};
-		BA06A18E2A3BF87200146F28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BA06A1712A3BF87000146F28 /* Idea Box */;
-			targetProxy = BA06A18D2A3BF87200146F28 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BA06A1942A3BF87200146F28 /* Debug */ = {
@@ -447,82 +325,6 @@
 			};
 			name = Release;
 		};
-		BA06A19A2A3BF87200146F28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 39ZN2S33DM;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bencooper.Idea-BoxTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Idea Box.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Idea Box";
-			};
-			name = Debug;
-		};
-		BA06A19B2A3BF87200146F28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 39ZN2S33DM;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bencooper.Idea-BoxTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Idea Box.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Idea Box";
-			};
-			name = Release;
-		};
-		BA06A19D2A3BF87200146F28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 39ZN2S33DM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bencooper.Idea-BoxUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Idea Box";
-			};
-			name = Debug;
-		};
-		BA06A19E2A3BF87200146F28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 39ZN2S33DM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bencooper.Idea-BoxUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Idea Box";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -540,24 +342,6 @@
 			buildConfigurations = (
 				BA06A1972A3BF87200146F28 /* Debug */,
 				BA06A1982A3BF87200146F28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BA06A1992A3BF87200146F28 /* Build configuration list for PBXNativeTarget "Idea BoxTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA06A19A2A3BF87200146F28 /* Debug */,
-				BA06A19B2A3BF87200146F28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BA06A19C2A3BF87200146F28 /* Build configuration list for PBXNativeTarget "Idea BoxUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BA06A19D2A3BF87200146F28 /* Debug */,
-				BA06A19E2A3BF87200146F28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

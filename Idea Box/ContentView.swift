@@ -68,15 +68,6 @@ struct AddIdeaInputBoxView: View {
     @State private var description: String = ""
     @FocusState private var focusField: Field?
     
-    func ideaboxSwipe(gestureVal: CGFloat){
-        if(gestureVal < 0){ // up
-            isCreatingIdea = true
-        }
-        if(gestureVal > 0) { // down
-            isCreatingIdea = false
-        }
-    }
-    
     var body: some View {
         Group {
             if isCreatingIdea {
@@ -85,11 +76,13 @@ struct AddIdeaInputBoxView: View {
                         Text("Enter your idea")
                         Spacer()
                         Button(action: {
-                            store.send(.addIdea(idea: description, parentId: parentId))
-                            description = ""
+                            if(description.count > 0) {
+                                store.send(.addIdea(idea: description, parentId: parentId))
+                                description = ""
+                            }
                             isCreatingIdea = false
                         }) {
-                            Text("Create")
+                            Text(description.count > 0 ? "Create" : "Close")
                         }
                     }.frame(maxWidth: .infinity)
                     TextEditor(text: $description)
@@ -101,9 +94,6 @@ struct AddIdeaInputBoxView: View {
                 Button("Add a new idea", action: {isCreatingIdea.toggle()})
             }
         }
-        .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
-            .onEnded({ value in ideaboxSwipe(gestureVal: value.translation.height)
-            }))
         .padding()
     }
 }
